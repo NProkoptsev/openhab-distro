@@ -1,0 +1,17 @@
+import org.joda.time.*
+import org.openhab.model.script.actions.Timer
+
+    var Timer timer
+    var message = ""
+    
+    rule "do checkTelegram every 2 seconds"
+    when
+        Time cron "0/2 * * * * ?"
+    then
+        message = checkTelegram("bot2")
+        if (message == "Hello")
+            sendTelegram("bot2","Yo man")
+    end
+   
+
+// vim: syntax=Xtend 
