@@ -6,6 +6,10 @@ sitemap demo label="Main Menu"
 		Group item=gC label="Cellar" icon="cellar"
 		Group item=Garden icon="garden"
 	}
+	Frame label="Mem" {
+	    Image item=ravioli_meme_318a500b_image
+        Text item=ravioli_meme_318a500b_text 
+    }
 	Frame label="Weather" {
 		Text item=Weather_Temperature valuecolor=[Weather_LastUpdate=="NULL"="lightgray",Weather_LastUpdate>90="lightgray",>25="orange",>15="green",>5="orange",<=5="blue"] {
 			Frame {

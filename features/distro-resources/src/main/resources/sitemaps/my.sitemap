@@ -1,0 +1,7 @@
+sitemap demo label="Main Menu"
+{
+    Frame label="Mem" {
+        Image item=ravioli_meme_318a500b_image
+        Text item=ravioli_meme_318a500b_text 
+    }
+}
